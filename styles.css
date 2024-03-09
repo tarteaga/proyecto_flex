@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: url("assets/pexels-kai-pilger-1341279.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+}
+
+header {
+  padding: 1%;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2%;
+  margin-bottom: 40px;
+}
+
+.series {
+  flex: 0 1 calc(30% - 20px);
+  margin: 6%;
+  margin-bottom: 0;
+  max-width: 20%;
+  background-color: #1010ee30;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.series img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.series-info {
+  text-align: center;
+}
+
+footer {
+  background-color: #1010ee30;
+  color: #fff;
+  text-align: center;
+  padding: 1%;
+  bottom: 0;
+  width: 98%;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-info {
+  margin-bottom: 10px; 
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column; 
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px; 
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .series {
+   max-width: 90%;
+  }
+  header img{
+    max-width: 70%;
+  }
+  footer{
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .series {
+    flex: 0 1 100%; 
+    margin: 6%;
+    max-width: 88%;
+  }
+  header img{
+    max-width: 60%;
+}
+}
