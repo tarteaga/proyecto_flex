@@ -39,6 +39,8 @@ main {
 
 .series-info {
   text-align: center;
+  margin: 4%;
+  padding: 5%;
 }
 
 footer {
